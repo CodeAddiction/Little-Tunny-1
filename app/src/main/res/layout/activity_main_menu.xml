@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Art"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Art"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geography"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100"
+        android:layout_height="100"
+        app:srcCompat="@drawable/play"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="366dp" />
+</android.support.constraint.ConstraintLayout>
