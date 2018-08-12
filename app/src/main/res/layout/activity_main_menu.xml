@@ -2,55 +2,100 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical"
     tools:context=".MainMenu">
 
+    <ImageView
+        android:contentDescription="@string/quizimodo_logo"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/logoFull"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
+        android:id="@+id/topic_art_button"
+        android:layout_width="291dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/topic_button_bg"
+        android:text="@string/art"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/topic_history_button"
+        android:layout_width="291dp"
+        android:layout_height="61sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/topic_button_bg"
+        android:text="@string/history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_art_button" />
+
+    <Button
+        android:id="@+id/topic_geography_button"
+        android:layout_width="291dp"
+        android:layout_height="61sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/topic_button_bg"
+        android:text="@string/geography"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_history_button" />
+
+    <Button
+        android:id="@+id/topic_space_button"
+        android:layout_width="291dp"
+        android:layout_height="61sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/topic_button_bg"
+        android:text="@string/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_science_button" />
+
+    <Button
+        android:id="@+id/topic_science_button"
+        android:layout_width="291dp"
+        android:layout_height="61sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/topic_button_bg"
+        android:text="@string/science"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_geography_button" />
+
+    <ImageButton
+        android:contentDescription="@string/play_button"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Art"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="289dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Art"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="241dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Geography"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="145dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="193dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Science"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="97dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@drawable/play"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="366dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="=@null"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_space_button" />
 </android.support.constraint.ConstraintLayout>

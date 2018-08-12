@@ -14,4 +14,12 @@
         completions."
     </string>
     <string name="title_activity_main_menu">MainMenu</string>
+    <string name="quizimodo">Quizimodo</string>
+    <string name="art">Art</string>
+    <string name="history">History</string>
+    <string name="geography">Geography</string>
+    <string name="space">Space</string>
+    <string name="science">Science</string>
+    <string name="quizimodo_logo">Quizimodo logo</string>
+    <string name="play_button">Play button</string>
 </resources>
