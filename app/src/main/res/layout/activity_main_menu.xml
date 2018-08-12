@@ -48,8 +48,8 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="100"
-        android:layout_height="100"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/play"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="366dp" />
