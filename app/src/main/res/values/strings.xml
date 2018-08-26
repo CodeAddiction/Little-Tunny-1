@@ -22,4 +22,6 @@
     <string name="science">Science</string>
     <string name="quizimodo_logo">Quizimodo logo</string>
     <string name="play_button">Play button</string>
+    <string name="topic">Topic</string>
+    <string name="random">Random</string>
 </resources>
