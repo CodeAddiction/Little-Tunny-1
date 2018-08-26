@@ -1,42 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
     tools:context=".GameActivity">
+
+    /*Info button (Time & score) parent layout*/
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
+        /*Left hand (Time) */
+
         <LinearLayout
-            android:layout_width="0"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
+            /*This is the time textview*/
+
+            <TextView
                 android:id="@+id/timeIV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/topic_button_bg" />
+                android:background="@drawable/topic_button_bg"
+                android:gravity="center"
+                android:text="Time = 60" />
         </LinearLayout>
 
+        /*Right hand (Score)*/
+
         <LinearLayout
-            android:layout_width="0"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
+            /*This is the score textview*/
+
+            <TextView
                 android:id="@+id/scoreIV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/topic_button_bg" />
+                android:background="@drawable/topic_button_bg"
+                android:gravity="center"
+                android:text="Score = 0" />
         </LinearLayout>
 
     </LinearLayout>
@@ -45,43 +60,44 @@
         android:id="@+id/questionTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Question goes here" />
+        android:text="Question goes here..." />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip" />
 
     <RadioButton
         android:id="@+id/radioButton"
-        android:layout_width="339dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Option 1" />
+        android:layout_gravity="center"
+        android:text="Option 1 goes here" />
 
     <RadioButton
         android:id="@+id/radioButton4"
-        android:layout_width="339dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Option 4" />
+        android:layout_gravity="center"
+        android:text="Option 1 goes here" />
 
     <RadioButton
         android:id="@+id/radioButton3"
-        android:layout_width="339dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Option 3" />
+        android:layout_gravity="center"
+        android:text="Option 1 goes here" />
 
     <RadioButton
         android:id="@+id/radioButton2"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:text="Option 2" />
-
-    <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/topic" />
+        android:layout_gravity="center"
+        android:text="Option 1 goes here" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Skip" />
 </LinearLayout>
