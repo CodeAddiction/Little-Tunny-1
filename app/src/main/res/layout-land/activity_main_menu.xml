@@ -29,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         /*Left hand list*/
 
@@ -113,20 +114,19 @@
 
     /*Play button*/
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".5"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight=".5"-->
+    <!--android:orientation="horizontal">-->
 
-        <ImageButton
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="=@null"
-            android:contentDescription="@string/play_button"
-            android:scaleType="fitCenter"
-            android:src="@drawable/play" />
-    </LinearLayout>
+    <!--<ImageButton-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:contentDescription="@string/play_button"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/play" />-->
+    <!--</LinearLayout>-->
 </LinearLayout>

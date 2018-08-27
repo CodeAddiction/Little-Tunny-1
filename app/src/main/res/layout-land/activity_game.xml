@@ -8,23 +8,22 @@
     android:orientation="vertical"
     tools:context=".GameActivity">
 
-    /*Info button (Time & score) parent layout*/
+    <!--Info button (Time and score) parent layout-->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        /*Left hand (Time) */
+        <!--Left hand (Time) -->
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            /*This is the time textview*/
+            <!--This is the time textview-->
 
             <TextView
                 android:id="@+id/timeIV"
@@ -35,7 +34,14 @@
                 android:text="Time = 60" />
         </LinearLayout>
 
-        /*Right hand (Score)*/
+        <TextView
+            android:id="@+id/topic_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Topic here" />
+
+        <!--Right hand (Score)-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -43,7 +49,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            /*This is the score textview*/
+            <!--This is the score textview-->
 
             <TextView
                 android:id="@+id/scoreIV"
@@ -56,6 +62,7 @@
 
     </LinearLayout>
 
+    <!--Question for topic-->
     <TextView
         android:id="@+id/questionTV"
         android:layout_width="wrap_content"
@@ -63,41 +70,46 @@
         android:layout_gravity="center"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Question goes here..." />
+        android:text="@string/question_goes_here" />
 
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Option 1 goes here" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Option 1 goes here" />
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_1_goes_here" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Option 1 goes here" />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_2_goes_here" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Option 1 goes here" />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_3_goes_here" />
 
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_4_goes_here" />
+    </RadioGroup>
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Skip" />
+        android:text="@string/skip" />
 </LinearLayout>

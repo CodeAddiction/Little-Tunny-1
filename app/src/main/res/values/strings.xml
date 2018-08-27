@@ -24,4 +24,14 @@
     <string name="play_button">Play button</string>
     <string name="topic">Topic</string>
     <string name="random">Random</string>
+    <string name="question_goes_here">Question goes here</string>
+    <string name="option_1_goes_here">Option 1 goes here</string>
+    <string name="option_2_goes_here">Option 2 goes here</string>
+    <string name="option_3_goes_here">Option 3 goes here</string>
+    <string name="option_4_goes_here">Option 4 goes here</string>
+    <string name="skip">Skip</string>
+    <string name="score_0">Score = 0</string>
+    <string name="topic_here">Topic here</string>
+    <string name="time_60">Time = 60</string>
+
 </resources>

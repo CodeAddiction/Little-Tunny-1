@@ -1,85 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
     tools:context=".GameActivity">
 
-    <ImageView
-        android:id="@+id/timeIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <!--Info button (Time and score) parent layout-->
 
-    <ImageView
-        android:id="@+id/scoreIV"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:orientation="horizontal">
 
+        <!--Left hand (Time) -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--This is the time textview-->
+
+            <TextView
+                android:id="@+id/timeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topic_button_bg"
+                android:gravity="center"
+                android:text="@string/time_60" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="@string/topic_here" />
+        <!--Right hand (Score)-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--This is the score textview-->
+
+            <TextView
+                android:id="@+id/scoreIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topic_button_bg"
+                android:gravity="center"
+                android:text="@string/score_0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Question for topic-->
     <TextView
         android:id="@+id/questionTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Question goes here"
-        app:layout_constraintEnd_toStartOf="@+id/scoreIV"
-        app:layout_constraintStart_toEndOf="@+id/timeIV"
-        tools:layout_editor_absoluteY="125dp" />
+        android:text="@string/question_goes_here" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_1_goes_here" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_2_goes_here" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_3_goes_here" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/option_4_goes_here" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Skip"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="445dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:text="Option 1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="193dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:text="Option 4"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="329dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:text="Option 3"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="284dp" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="339dp"
-        android:layout_height="wrap_content"
-        android:text="Option 2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="239dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Topic"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="42dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_gravity="center"
+        android:text="@string/skip" />
+</LinearLayout>

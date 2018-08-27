@@ -73,25 +73,33 @@
             android:layout_weight="1"
             android:background="@drawable/topic_button_bg"
             android:text="@string/science" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/button"
-            android:layout_gravity="center"
+        <Button
+            android:id="@+id/topic_random_button"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:background="=@null"
-            android:contentDescription="@string/play_button"
-            android:src="@drawable/play"
-            android:scaleType="fitCenter"
-            android:layout_weight="1" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/topic_button_bg"
+            android:text="@string/random" />
     </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:contentDescription="@string/play_button"-->
+    <!--android:src="@drawable/play"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
 </LinearLayout>
